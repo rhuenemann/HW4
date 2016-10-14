@@ -6,22 +6,23 @@ package model;
 public class Xboxgames {
     private int gameid;
     private String title;
-    private int relasedate;
+    private int releasedate;
     private String developer;
     private String rating;
+    
     
     public Xboxgames() {
         this.gameid = 0;
         this.title = "";
-        this.relasedate = 0;
+        this.releasedate = 0;
         this.developer = "";
         this.rating = "";
     }
 
-    public Xboxgames(int gameid, String title, int relasedate, String developer, String rating) {
+    public Xboxgames(int gameid, String title, int releasedate, String developer, String rating) {
         this.gameid = gameid;
         this.title = title;
-        this.relasedate = relasedate;
+        this.releasedate = releasedate;
         this.developer = developer;
         this.rating = rating;
     }
@@ -42,12 +43,12 @@ public class Xboxgames {
         this.title = title;
     }
 
-    public int getRelasedate() {
-        return relasedate;
+    public int getReleasedate() {
+        return releasedate;
     }
 
-    public void setRelasedate(int relasedate) {
-        this.relasedate = relasedate;
+    public void setReleasedate(int releasedate) {
+        this.releasedate = releasedate;
     }
 
     public String getDeveloper() {
@@ -68,11 +69,8 @@ public class Xboxgames {
 
     @Override
     public String toString() {
-        return "Xboxgames{" + "gameid=" + gameid + ", title=" + title + ", relasedate=" + relasedate + ", developer=" + developer + ", rating=" + rating + '}';
+        return "Xboxgames{" + "gameid=" + gameid + ", title=" + title + ", releasedate=" + releasedate + ", developer=" + developer + ", rating=" + rating + '}';
     }
-    
-    
-    
-    
+       
     
 }
